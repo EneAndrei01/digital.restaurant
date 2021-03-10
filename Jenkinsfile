@@ -1,2 +1,11 @@
-#!/usr/bin/env groovy
-println "Hello from the shebang line"
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
